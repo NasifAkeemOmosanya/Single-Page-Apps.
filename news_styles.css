@@ -1,0 +1,51 @@
+/* main stylings for newsltter site */
+body {
+    /* background: #1d3a61;
+     */
+     background: hsl(220deg 12% 14% / 82%);
+    /* box-sizing: content-box; */
+}
+
+main {
+    margin-top: 200px;
+}
+
+.avatar-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+h4 {
+    color: beige;
+    padding-left: 5px;
+}
+
+h6 {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.profile-details {
+    font-size: 16px;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+footer {
+    margin-bottom: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 20px;
+    
+}
