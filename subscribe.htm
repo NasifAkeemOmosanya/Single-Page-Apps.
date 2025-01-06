@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Subscribe" />
+        <meta name="description" content="Subscription Form for Daily Dribble Newsletter" />
+
+        <!--document title-->
+        <title>Subscribe to Newsletter</title>
+
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="news_styles.css" type="text/css" />
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <header>Subscribe</header>
+            </section>
+
+            <section>
+              <form method="POST" action="/">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="enter your email address" required/>
+
+                <label for="careers">Careers</label>
+                <select required>
+                    <option>Select career preference</option>
+                    <option>Agriculture</option>
+                    <option>Biochemist</option>
+                    <option>Cardiologist</option>
+                    <option>Doctor</option>
+                    <option>Engineer</option>
+                </select>
+
+                <label for="category">Newsletter Category</label>
+                <select required>
+                    <option>Select a category</option>
+                    <option>Dily motivation</option>
+                    <option>Career Tips</option>
+                    <option>Career Hacks</option>
+                    <option>Resources</option>
+                </select>
+
+                <button type="submit">Subscribe</button>
+              </form>
+            </section>
+
+            <script>
+                // JavaScript to handle the form submission
+                document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent the form from refreshing the page
+                    
+                    // Get the email input value
+                    const email = document.getElementById("email").value;
+                    
+                    // Simulate form submission (you can send this data to a server here)
+                    if (email) {
+                        // Display a success message
+                        document.getElementById("message").textContent = "Thank you for subscribing!";
+                        document.getElementById("message").style.color = "green";
+                        
+                        // Clear the input field after submission
+                        document.getElementById("email").value = "";
+                    } else {
+                        // Display an error message if email is empty
+                        document.getElementById("message").textContent = "Please enter a valid email address.";
+                        document.getElementById("message").style.color = "red";
+                    }
+                });
+            </script>
+        </main>
+
+        <footer>
+            <section>
+                <button type="submit">Previous</button>
+
+                <button type="submit">Next</button>
+            </section>
+        </footer>
+    </body>
+</html>
