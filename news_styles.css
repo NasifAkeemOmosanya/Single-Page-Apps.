@@ -1,4 +1,4 @@
-/* main stylings for newsltter site */
+/* main stylings for newsltter site and landing page */
 body {
     /* background: #1d3a61;
      */
@@ -14,7 +14,6 @@ main {
     display: flex;
     justify-content: center;
 }
-
 
 h4 {
     color: beige;
@@ -46,6 +45,9 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 200px;
-    padding: 20px;
-    
+    padding: 20px; 
+}
+
+.theme {
+    background: #000;
 }
