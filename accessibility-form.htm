@@ -71,6 +71,126 @@
            </aside>
         </main>
 
+        <html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+
+        <style>
+            li {
+                list-style-type: none;
+            }
+
+            a:active {
+                color: red;
+            }
+
+            a:visited {
+                color: purple;
+            }
+
+            header {
+                background-color: rebeccapurple;
+                display: block;
+                width: 100%;
+            }
+
+            h1 {
+                color: #fff;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+           
+
+            article {
+                background-color: cyan;
+                margin: 10px;
+                padding: 10px;
+                flex: 200px;
+            }
+
+            section {
+                display: flex;
+            }
+            article {
+                flex: 1 200px;
+            }
+            
+           article:nth-last-of-type(3) {
+                flex: 3 200px;
+                display: flex;
+                flex-flow: column;
+            }
+
+            article:nth-of-type(3) div:first-child {
+                flex: 1 200px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            button {
+                margin: 5px;
+                flex: 1 auto;
+                line-height: 1.5;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Complex flexbox example</h1>
+        </header>
+
+        <section>
+            <article>
+                <h2>First article</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo mollitia, esse inventore quia velit animi culpa odio ea deserunt natus earum sit, consectetur tempora nobis asperiores ipsa ut, veniam eum?</p>
+            </article>
+
+            <article>
+                <h2> Second article</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus assumenda accusamus nobis iste minus aperiam natus dolorum, facere perspiciatis dolor repudiandae, voluptatem earum quidem maxime reiciendis dignissimos? Hic, soluta assumenda?</p>
+            </article>
+
+            <article>
+                <div>
+                    <button>smile  </button>
+                    <button>laugh </button>
+                    <button>wink </button>
+                    <button>shrug</button>
+                    <button>blush</button>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni saepe reprehenderit ipsam rerum officia dolor quae. Dignissimos quas sunt, magnam pariatur ducimus aliquam iure dolore assumenda, soluta amet nihil esse!</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam deserunt corrupti omnis aperiam similique blanditiis, animi laboriosam facere, voluptatibus maiores sapiente, nostrum aut? Eum sit quasi ducimus vero aut odit!</p>
+                </div>
+            </article>
+        </section>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>
+                    <a href="mailto:updatescribinnovations@gmail.com?cc=akeemnasif001@yahoo.com&subject=Book%20an%20Expert%20Softwre%20Engineering%20Session" title="Send a Mail">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
+
         <footer>
             <div class="buttons">
                 <button type="submit" class="right-btn">Left</button>
